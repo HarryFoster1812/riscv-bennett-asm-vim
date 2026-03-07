@@ -178,6 +178,7 @@ syn keyword riscvTodo                  contained TODO FIXME
 " Comments
 syn region  riscvCommentP              start="#" skip="\\$" end="$" keepend contains=riscvTodo
 syn region  riscvCommentL              start="//" skip="\\$" end="$" keepend contains=riscvTodo
+syn region  riscvCommentM              start=";" skip="\\$" end="$" keepend contains=riscvTodo
 syn region  riscvComment               matchgroup=riscvCommentStart start="/\*" end="\*/" keepend contains=riscvTodo,riscvCommentStartError extend
 syn match   riscvCommentEndError       display "\*/"
 syn match   riscvCommentStartError     display "/\*"me=e-1 contained
@@ -195,6 +196,7 @@ syn region  riscvPreProc               start="^\s*\zs#\s*\(pragma\>\|line\>\|war
 
 hi def link riscvCommentP                   Comment
 hi def link riscvCommentL                   Comment
+hi def link riscvCommentM                   Comment
 hi def link riscvComment                    Comment
 hi def link riscvCommentStart               Comment
 hi def link riscvCommentStartError          Error
