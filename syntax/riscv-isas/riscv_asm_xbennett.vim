@@ -23,7 +23,7 @@ syn keyword riscvIInstruction          lb lh lw lbu lhu
 " S-type
 syn keyword riscvIInstruction          sb sh sw
 " I-type: arithmetic
-syn keyword riscvIInstruction          addi slti sltiu xori ori andi, subi
+syn keyword riscvIInstruction          addi slti sltiu xori ori andi subi
 " I-type: shift
 syn keyword riscvIInstruction          slli srli srai
 " R-type
