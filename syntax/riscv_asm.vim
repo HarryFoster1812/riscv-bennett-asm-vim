@@ -194,6 +194,8 @@ syn match   riscvInclude               display "^\s*\zs#\s*include\>\s*["<]" con
 syn region  riscvDefine                start="^\s*\zs#\s*\(define\|undef\)\>" skip="\\$" end="$" keepend contains=ALLBUT,riscvCommentP,riscvPreCondit,riscvPreConditMatch,riscvInclude,riscvIncluded,riscvFenceError,riscvFenceType,@riscvDirectiveGroup
 syn region  riscvPreProc               start="^\s*\zs#\s*\(pragma\>\|line\>\|warning\>\|warn\>\|error\>\)" skip="\\$" end="$" keepend contains=ALLBUT,riscvCommentP,riscvPreCondit,riscvPreConditMatch,riscvInclude,riscvIncluded,riscvFenceError,riscvFenceType,@riscvDirectiveGroup
 
+syn keyword riscvXInstruction               subi
+
 hi def link riscvCommentP                   Comment
 hi def link riscvCommentL                   Comment
 hi def link riscvCommentM                   Comment
